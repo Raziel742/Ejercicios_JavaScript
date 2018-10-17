@@ -20,7 +20,7 @@ document.getElementById("tfEmail").addEventListener("keyup", function(e) {
         lInfoEmail.style.color = "green";
     }
     else {
-        lInfoEmail.innerHTML = "Erróneo";
+        lInfoEmail.innerHTML = "Erróneoo";
         lInfoEmail.style.color = "red";
     }
 })
