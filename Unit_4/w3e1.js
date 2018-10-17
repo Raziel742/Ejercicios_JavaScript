@@ -7,3 +7,20 @@
 // Conforme sale el foco de cada input, deberás validar el contenido de éste y mostrar información
 // al usuario que le indique si está correcto o no.
 
+var lInfoNombre = document.getElementById("infoNombre");
+var lInfoApellidos = document.getElementById("infoApellidos");
+var lInfoDni = document.getElementById("infoDni");
+var lInfoTelefono = document.getElementById("infoTelefono");
+var lInfoEmail = document.getElementById("infoEmail");
+var lInfoNombreUsuario = document.getElementById("infoNombreUsuario");
+
+document.getElementById("tfEmail").addEventListener("keyup", function(e) {
+    if (/\S+@\S+\.\S+/.test(e.target.value)) {
+        lInfoEmail.innerHTML = "Válido";
+        lInfoEmail.style.color = "green";
+    }
+    else {
+        lInfoEmail.innerHTML = "Erróneo";
+        lInfoEmail.style.color = "red";
+    }
+})

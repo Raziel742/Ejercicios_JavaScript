@@ -11,8 +11,6 @@ function showCanvas() {
 
     document.write("</table>");
 
-    document.write("<br><button onclick='celdas.forEach(a => a.style.backgroundColor = \"white\")'>LIMPIAR</button>");
-
     var celdas = document.querySelectorAll("td");
 
     celdas.forEach(a => a.addEventListener("mousemove", function(e) {
@@ -25,4 +23,6 @@ function showCanvas() {
     celdas.forEach(a => a.addEventListener("click", function() {
         a.parentNode.childNodes.forEach(a => a.style.backgroundColor = "white");
     }));
+
+    document.write("<br><button onclick='celdas.forEach(a => a.style.backgroundColor = \"white\")'>LIMPIAR</button>");
 }
