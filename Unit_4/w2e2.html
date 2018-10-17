@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <p>Párrafo 1</p>
+    <p>Párrafo 2</p>
+    <p>Párrafo 3</p>
+    <p>Párrafo 4</p>
+
+    <button onclick="document.querySelectorAll('p').forEach(a => a.style.fontSize = (parseFloat(window.getComputedStyle(a, null).getPropertyValue('font-size')) - 1) + 'px')">-</button>
+    <button onclick="document.querySelectorAll('p').forEach(a => a.style.fontSize = (parseFloat(window.getComputedStyle(a, null).getPropertyValue('font-size')) + 1) + 'px')">+</button>
+    <button onclick="document.querySelectorAll('p').forEach(a => a.style.fontSize = 'initial')">Tamaño por defecto</button>
+
+    <button onclick="document.querySelectorAll('p').forEach(a => a.style.textAlign = 'left')">Alinear a la izquierda</button>
+    <button onclick="document.querySelectorAll('p').forEach(a => a.style.textAlign = 'right')">Alinear a la derecha</button>
+</body>
+</html>
