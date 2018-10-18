@@ -15,12 +15,8 @@ var lInfoEmail = document.getElementById("infoEmail");
 var lInfoNombreUsuario = document.getElementById("infoNombreUsuario");
 
 document.getElementById("tfEmail").addEventListener("keyup", function(e) {
-    if (/\S+@\S+\.\S+/.test(e.target.value)) {
-        lInfoEmail.innerHTML = "Válido";
-        lInfoEmail.style.color = "green";
-    }
-    else {
-        lInfoEmail.innerHTML = "Erróneo";
-        lInfoEmail.style.color = "red";
-    }
-})
+    if (/\S+@{1}\S+\.{1}\S/.test(e.target.value))
+        e.target.style.border = "2px solid green";
+    else
+        e.target.style.border = "2px solid red";
+});
