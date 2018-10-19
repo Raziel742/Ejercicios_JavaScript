@@ -1,47 +1,29 @@
-<!--Crea un formulario típico de registro para tu web. Debe contener al menos campos para introducir-->
-<!--nombre, apellidos, DNI, Teléfono, email y nombre de usuario. Todos los campos son obligatorios,-->
-<!--y debes validar el mayor número posible de ellos haciendo uso de expresiones regulares.-->
-<!--El nombre de usuario debe estar formado por al menos 8 caracteres, entre los cuales debe aparecer-->
-<!--obligatoriamente algún número y algún signo de puntuación.-->
-
-<!--Conforme sale el foco de cada input, deberás validar el contenido de éste y mostrar información-->
-<!--al usuario que le indique si está correcto o no.-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <style>
-        body {
-            max-width: 320px;
+        form {
+            margin: 3%;
         }
-        input {
-            float: right;
+        form * {
+            margin: .4%;
         }
         label {
-            color: red;
+            float: left;
+            clear: left;
+            width: 9em;
         }
     </style>
 </head>
 <body>
     <form>
-        Nombre: <input id="tfNombre" type="text"><br>
-        <label id="infoNombre"></label><br><br>
-
-        Apellidos: <input id="tfApellidos" type="text"><br>
-        <label id="infoApellidos"></label><br><br>
-
-        DNI: <input id="tfDni" type="text"><br>
-        <label id="infoDni"></label><br><br>
-
-        Teléfono: <input id="tfTelefono" type="text"><br>
-        <label id="infoTelefono"></label><br><br>
-
-        Email: <input id="tfEmail" type="text"><br>
-        <label id="infoEmail"></label><br><br>
-
-        Nombre de usuario: <input id="tfNombreUsuario" type="text"><br>
-        <label id="infoNombreUsuario"></label>
+        <label for="tfNombre">Nombre:</label><input id="tfNombre" type="text"><br>
+        <label for="tfApellidos">Apellidos:</label><input id="tfApellidos" type="text"><br>
+        <label for="tfDni">DNI:</label><input id="tfDni" type="text"><br>
+        <label for="tfTelefono">Teléfono:</label><input id="tfTelefono" type="text"><br>
+        <label for="tfEmail">Email:</label><input id="tfEmail" type="text"><br>
+        <label for="tfNombreUsuario">Nombre de usuario:</label><input id="tfNombreUsuario" type="text">
     </form>
 
     <script src="w3e1.js"></script>
